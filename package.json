@@ -1,0 +1,31 @@
+{
+  "name": "vickymoditech-pkg1",
+  "version": "1.0.7",
+  "description": "just for testing purpose!",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/vickymoditech/publishpackage.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "vicky modi",
+  "license": "ISC",
+  "files": [
+    "dist/*",
+    "node_modules/*"
+  ],
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.202",
+    "lodash": "^4.17.21"
+  }
+}
