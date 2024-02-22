@@ -6,8 +6,15 @@ on:
   workflow_dispatch:
     inputs:
       release-type:
-        description: "Release type (one of): patch, minor, major, prepatch, preminor, premajor, prerelease"
+        description: "Release type (one of): patch, minor, major"
         required: true
+        default: "patch"
+        type: choice
+        options:
+          - patch
+          - minor
+          - major
+
 jobs:
   release:
     runs-on: ubuntu-latest
